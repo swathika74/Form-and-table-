@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Form and Table</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script1.js" defer></script>
+</head>
+<body>
+   <div class="container">
+          <h1>Form and Table</h1>
+          <form id="form">
+              <label>Name:</label>  
+              <input type="text" id="name" class="name" required>
+              <span id="nameerror" class="error"></span>
+              <br>
+              <label>Designation:</label>
+              <input type="text" id="designation" class="designation" required>
+              <span id="designationerror" class="error"></span>
+              <br>
+              <label>Phone Number:</label>
+              <input type="tel" id="Phonenumber" class="phonenumber" required>
+              <span id="phonenumbererror" class="error"></span>
+              <br>
+              <br>
+              <button type="button" id="button" onclick="addOrUpdateRow()">Add</button>
+          </form>
+          <table>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Phone Number</th>    
+                <th>Actions</th>
+            </tr>    
+            <tbody id="employeeTableBody">
+            </tbody>
+          </table>
+    </div>      
+</body>
+</html>
